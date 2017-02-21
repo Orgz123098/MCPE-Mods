@@ -1,3 +1,15 @@
+var black = android.graphics.Color.BLACK;
+var white = android.graphics.Color.WHITE;
+var magenta = android.graphics.Color.MAGENTA;
+var red = android.graphics.Color.RED;
+var blue = android.graphics.Color.BLUE;
+var yellow = android.graphics.Color.YELLOW;
+var green = android.graphics.Color.GREEN;
+var cyan = android.graphics.Color.CYAN;
+var dodgerblue = android.graphics.Color.parseColor("#1E90FF");
+var deeppink = android.graphics.Color.parseColor("#FF1493");
+var teal = android.graphics.Color.parseColor("#008080");
+
 var GUI;
       var menu;
       var exitUI;
@@ -39,6 +51,8 @@ var GUI;
       menuLayout1.setOrientation(1);
       menuScroll.addView(menuLayout);
       menuLayout1.addView(menuScroll);
+      
+      
       
       menu = new android.widget.PopupWindow(menuLayout1, ctx.getWindowManager().getDefaultDisplay().getWidth()/2, ctx.getWindowManager().getDefaultDisplay().getHeight());
       menu.setBackgroundDrawable(new android.graphics.drawable.ColorDrawable(android.graphics.Color.BLACK));
