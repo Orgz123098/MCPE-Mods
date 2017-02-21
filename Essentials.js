@@ -6,9 +6,23 @@ var blue = android.graphics.Color.BLUE;
 var yellow = android.graphics.Color.YELLOW;
 var green = android.graphics.Color.GREEN;
 var cyan = android.graphics.Color.CYAN;
+var trans = android.graphics.Color.TRANSPARENT;
 var dodgerblue = android.graphics.Color.parseColor("#1E90FF");
 var deeppink = android.graphics.Color.parseColor("#FF1493");
 var teal = android.graphics.Color.parseColor("#008080");
+
+var center = android.view.Gravity.CENTER;
+var right = android.view.Gravity.RIGHT;
+var left = android.view.Gravity.LEFT;
+var top = android.view.gravity.TOP;
+var bottom = android.view.Gravity.BOTTOM;
+
+var TV = android.widget.TextView;
+var Button = android.widget.Button;
+var PopupWindow = android.widget.PopupWindow;
+var LL = new android.widget.LinearLayout;
+var Runnable = java.lang.Runnable;
+var OCL = android.view.View.OnClickListener;
 
 var GUI;
       var menu;
@@ -19,13 +33,13 @@ var GUI;
       }
       function newLevel(){
       var ctx = com.mojang.minecraftpe.MainActivity.currentMainActivity.get();
-      ctx.runOnUiThread(new java.lang.Runnable({ run: function(){
+      ctx.runOnUiThread(new Runnable({ run: function(){
       try{
-      var layout = new android.widget.LinearLayout(ctx);
+      var layout = new LL(ctx);
       layout.setOrientation(1);
-      var menuBtn = new android.widget.Button(ctx);
+      var menuBtn = new Button(ctx);
       menuBtn.setText('Menu');
-      menuBtn.setOnClickListener(new android.view.View.OnClickListener({
+      menuBtn.setOnClickListener(new OCL({
       onClick: function(viewarg){
       mainMenu();
       exit();
@@ -42,11 +56,11 @@ var GUI;
       }
        function mainMenu(){
       var ctx = com.mojang.minecraftpe.MainActivity.currentMainActivity.get();
-      ctx.runOnUiThread(new java.lang.Runnable({ run: function(){
+      ctx.runOnUiThread(new Runnable({ run: function(){
       try{
-      var menuLayout = new android.widget.LinearLayout(ctx);
+      var menuLayout = new LL(ctx);
       var menuScroll = new android.widget.ScrollView(ctx);
-      var menuLayout1 = new android.widget.LinearLayout(ctx);
+      var menuLayout1 = new LL(ctx);
       menuLayout.setOrientation(1);
       menuLayout1.setOrientation(1);
       menuScroll.addView(menuLayout);
@@ -64,13 +78,13 @@ var GUI;
       }
       function exit(){
       var ctxe = com.mojang.minecraftpe.MainActivity.currentMainActivity.get();
-      ctxe.runOnUiThread(new java.lang.Runnable({ run: function(){
+      ctxe.runOnUiThread(new Runnable({ run: function(){
       try{
-      var xLayout = new android.widget.LinearLayout(ctxe);
-      var xButton = new android.widget.Button(ctxe);
+      var xLayout = new LL(ctxe);
+      var xButton = new Button(ctxe);
       xButton.setText('X');
       xButton.setTextColor(android.graphics.Color.WHITE);
-      xButton.setOnClickListener(new android.view.View.OnClickListener({
+      xButton.setOnClickListener(new OCL({
       onClick: function(viewarg){
       exitUI.dismiss();
       menu.dismiss();
