@@ -66,7 +66,12 @@ var GUI;
       menuScroll.addView(menuLayout);
       menuLayout1.addView(menuScroll);
       
-      
+      var title = new TV(ctx);
+      title.setTextSize("27");
+      title.setText("Essentials");
+      title.setTextColor(dodgerblue);
+      title.setGravity(center);
+      menuLayout.addView(title);
       
       menu = new android.widget.PopupWindow(menuLayout1, ctx.getWindowManager().getDefaultDisplay().getWidth()/2, ctx.getWindowManager().getDefaultDisplay().getHeight());
       menu.setBackgroundDrawable(new android.graphics.drawable.ColorDrawable(black));
