@@ -19,10 +19,12 @@ var bottom = android.view.Gravity.BOTTOM;
 
 var TV = android.widget.TextView;
 var Button = android.widget.Button;
-var PopupWindow = android.widget.PopupWindow;
+var PW = android.widget.PopupWindow;
 var LL = new android.widget.LinearLayout;
 var Runnable = java.lang.Runnable;
 var OCL = android.view.View.OnClickListener;
+var CD = android.graphics.drawable.ColorDrawable;
+var RL = android.widget.RelativeLayout;
 
 var GUI;
       var menu;
@@ -46,8 +48,8 @@ var GUI;
       }
       }));
       layout.addView(menuBtn);
-      GUI = new android.widget.PopupWindow(layout, android.widget.RelativeLayout.LayoutParams.WRAP_CONTENT, android.widget.RelativeLayout.LayoutParams.WRAP_CONTENT);
-      GUI.setBackgroundDrawable(new android.graphics.drawable.ColorDrawable(trans));
+      GUI = new PW(layout, RL.LayoutParams.WRAP_CONTENT, RL.LayoutParams.WRAP_CONTENT);
+      GUI.setBackgroundDrawable(new CD(trans));
       GUI.showAtLocation(ctx.getWindow().getDecorView(), right | center, 10, 20);
       }catch(err){
       print('An error occured: ' + err);
@@ -80,8 +82,8 @@ var GUI;
       author.setGravity(center);
       menuLayout.addView(author);
       
-      menu = new android.widget.PopupWindow(menuLayout1, ctx.getWindowManager().getDefaultDisplay().getWidth()/2, ctx.getWindowManager().getDefaultDisplay().getHeight());
-      menu.setBackgroundDrawable(new android.graphics.drawable.ColorDrawable(black));
+      menu = new PW(menuLayout1, ctx.getWindowManager().getDefaultDisplay().getWidth()/2, ctx.getWindowManager().getDefaultDisplay().getHeight());
+      menu.setBackgroundDrawable(new CD(black));
       menu.showAtLocation(ctx.getWindow().getDecorView(), right | top, 0, 0);
       }catch(error){
       print('An error occured: ' + error);
@@ -103,8 +105,8 @@ var GUI;
       }
       }));
       xLayout.addView(xButton);
-      exitUI = new android.widget.PopupWindow(xLayout, dip2px(40), dip2px(40));
-      exitUI.setBackgroundDrawable(new android.graphics.drawable.ColorDrawable(trans));
+      exitUI = new PW(xLayout, dip2px(40), dip2px(40));
+      exitUI.setBackgroundDrawable(new CD(trans));
       exitUI.showAtLocation(ctxe.getWindow().getDecorView(), right | top, 0, 0);
       }catch(exception){
       print(exception);
