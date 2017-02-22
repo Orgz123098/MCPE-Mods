@@ -81,6 +81,32 @@ var GUI;
       author.setTextColor(dodgerblue);
       author.setGravity(center);
       menuLayout.addView(author);
+            
+      /*
+      ----------
+      */
+            
+      var s1b1 = new Button(ctx);
+      s1b1.setText("Fly Mode On");
+      s1b1.setTextColor(teal);
+      s1b1.setBackgroundDrawable(new CD(dodgerblue));
+      s1b1.setOnClickListener(new OCL({
+          onClick: function(viewarg){
+              Player.setCanFly(1);
+          }
+      }));
+      menuLayout.addView(s1b1);
+            
+      var s1b1 = new Button(ctx);
+      s1b1.setText("Fly Mode Off");
+      s1b1.setTextColor(teal);
+      s1b1.setBackgroundDrawable(new CD(dodgerblue));
+      s1b1.setOnClickListener(new OCL({
+          onClick: function(viewarg){
+              Player.setCanFly(0);
+          }
+      }));
+      menuLayout.addView(s1b1);
       
       menu = new PW(menuLayout1, ctx.getWindowManager().getDefaultDisplay().getWidth()/2, ctx.getWindowManager().getDefaultDisplay().getHeight());
       menu.setBackgroundDrawable(new CD(black));
