@@ -73,6 +73,13 @@ var GUI;
       title.setGravity(center);
       menuLayout.addView(title);
       
+      var author = new TV(ctx);
+      author.setTextSize("25");
+      author.setText("Made by AllMCPE");
+      author.setTextColor(dodgerblue);
+      author.setGravity(center);
+      menuLayout.addView(author);
+      
       menu = new android.widget.PopupWindow(menuLayout1, ctx.getWindowManager().getDefaultDisplay().getWidth()/2, ctx.getWindowManager().getDefaultDisplay().getHeight());
       menu.setBackgroundDrawable(new android.graphics.drawable.ColorDrawable(black));
       menu.showAtLocation(ctx.getWindow().getDecorView(), right | top, 0, 0);
