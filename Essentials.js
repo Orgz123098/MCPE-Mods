@@ -118,10 +118,32 @@ var GUI;
       s2b1.setBackgroundDrawable(new CD(dodgerblue));
       s2b1.setOnClickListener(new OCL({
           onClick: function(viewarg){
-                Entity.addEffect(getPlayerEnt(), MobEffect.movementSpeed, 9999*20, false, true);
+                Entity.addEffect(getPlayerEnt(), MobEffect.movementSpeed, 9999*20, 0, false, true);
           }
       }));
       menuLayout.addView(s2b1);
+            
+      var s2b2 = new Button(ctx);
+      s2b2.setText("Speed 2");
+      s2b2.setTextColor(deeppink);
+      s2b2.setBackgroundDrawable(new CD(dodgerblue));
+      s2b2.setOnClickListener(new OCL({
+          onClick: function(viewarg){
+                Entity.addEffect(getPlayerEnt(), MobEffect.movementSpeed, 9999*20, 1, false, true);
+          }
+      }));
+      menuLayout.addView(s2b2);
+            
+      var s2b3 = new Button(ctx);
+      s2b3.setText("Speed 3");
+      s2b3.setTextColor(deeppink);
+      s2b3.setBackgroundDrawable(new CD(dodgerblue));
+      s2b3.setOnClickListener(new OCL({
+          onClick: function(viewarg){
+                Entity.addEffect(getPlayerEnt(), MobEffect.movementSpeed, 9999*20, 2, false, true);
+          }
+      }));
+      menuLayout.addView(s2b3);
       
       menu = new PW(menuLayout1, ctx.getWindowManager().getDefaultDisplay().getWidth()/2, ctx.getWindowManager().getDefaultDisplay().getHeight());
       menu.setBackgroundDrawable(new CD(black));
