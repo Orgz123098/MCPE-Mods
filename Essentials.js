@@ -10,6 +10,7 @@ var trans = android.graphics.Color.TRANSPARENT;
 var dodgerblue = android.graphics.Color.parseColor("#1E90FF");
 var deeppink = android.graphics.Color.parseColor("#FF1493");
 var teal = android.graphics.Color.parseColor("#008080");
+var crimson = android.graphics.Color.parseColor("#DC143C");
 
 var center = android.view.Gravity.CENTER;
 var right = android.view.Gravity.RIGHT;
@@ -144,6 +145,17 @@ var GUI;
           }
       }));
       menuLayout.addView(s2b3);
+            
+      var s2b4 = new Button(ctx);
+      s2b4.setText("Speed 4");
+      s2b4.setTextColor(deeppink);
+      s2b4.setBackgroundDrawable(new CD(dodgerblue));
+      s2b4.setOnClickListener(new OCL({
+          onClick: function(viewarg){
+                Entity.addEffect(getPlayerEnt(), MobEffect.movementSpeed, 9999*20, 3, false, true);
+          }
+      }));
+      menuLayout.addView(s2b4);
       
       menu = new PW(menuLayout1, ctx.getWindowManager().getDefaultDisplay().getWidth()/2, ctx.getWindowManager().getDefaultDisplay().getHeight());
       menu.setBackgroundDrawable(new CD(black));
