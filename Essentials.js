@@ -156,6 +156,28 @@ var GUI;
           }
       }));
       menuLayout.addView(s2b4);
+            
+      var s2b5 = new Button(ctx);
+      s2b5.setText("Speed 5");
+      s2b5.setTextColor(deeppink);
+      s2b5.setBackgroundDrawable(new CD(dodgerblue));
+      s2b5.setOnClickListener(new OCL({
+          onClick: function(viewarg){
+                Entity.addEffect(getPlayerEnt(), MobEffect.movementSpeed, 9999*20, 4, false, true);
+          }
+      }));
+      menuLayout.addView(s2b5);
+            
+      var s2b6 = new Button(ctx);
+      s2b6.setText("Speed 6");
+      s2b6.setTextColor(deeppink);
+      s2b6.setBackgroundDrawable(new CD(dodgerblue));
+      s2b6.setOnClickListener(new OCL({
+          onClick: function(viewarg){
+                Entity.addEffect(getPlayerEnt(), MobEffect.movementSpeed, 9999*20, 5, false, true);
+          }
+      }));
+      menuLayout.addView(s2b6);
       
       menu = new PW(menuLayout1, ctx.getWindowManager().getDefaultDisplay().getWidth()/2, ctx.getWindowManager().getDefaultDisplay().getHeight());
       menu.setBackgroundDrawable(new CD(black));
