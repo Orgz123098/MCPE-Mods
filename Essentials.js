@@ -168,50 +168,6 @@ var GUI;
       }));
       menuLayout.addView(s2b5);
             
-      var s2b6 = new Button(ctx);
-      s2b6.setText("Speed 6");
-      s2b6.setTextColor(deeppink);
-      s2b6.setBackgroundDrawable(new CD(dodgerblue));
-      s2b6.setOnClickListener(new OCL({
-          onClick: function(viewarg){
-                Entity.addEffect(getPlayerEnt(), MobEffect.movementSpeed, 9999*20, 5, false, true);
-          }
-      }));
-      menuLayout.addView(s2b6);
-            
-      var s2b7 = new Button(ctx);
-      s2b7.setText("Speed 7");
-      s2b7.setTextColor(deeppink);
-      s2b7.setBackgroundDrawable(new CD(dodgerblue));
-      s2b7.setOnClickListener(new OCL({
-          onClick: function(viewarg){
-                Entity.addEffect(getPlayerEnt(), MobEffect.movementSpeed, 9999*20, 6, false, true);
-          }
-      }));
-      menuLayout.addView(s2b7);
-            
-      var s2b8 = new Button(ctx);
-      s2b8.setText("Speed 8");
-      s2b8.setTextColor(deeppink);
-      s2b8.setBackgroundDrawable(new CD(dodgerblue));
-      s2b8.setOnClickListener(new OCL({
-          onClick: function(viewarg){
-                Entity.addEffect(getPlayerEnt(), MobEffect.movementSpeed, 9999*20, 7, false, true);
-          }
-      }));
-      menuLayout.addView(s2b8);
-            
-      var s2b9 = new Button(ctx);
-      s2b9.setText("Speed 9");
-      s2b9.setTextColor(deeppink);
-      s2b9.setBackgroundDrawable(new CD(dodgerblue));
-      s2b9.setOnClickListener(new OCL({
-          onClick: function(viewarg){
-                Entity.addEffect(getPlayerEnt(), MobEffect.movementSpeed, 9999*20, 8, false, true);
-          }
-      }));
-      menuLayout.addView(s2b9);
-            
       var s2b10 = new Button(ctx);
       s2b10.setText("Speed 10");
       s2b10.setTextColor(deeppink);
@@ -266,6 +222,138 @@ var GUI;
           }
       }));
       menuLayout.addView(s2b14);
+            
+      var s2b15 = new Button(ctx);
+      s2b15.setText("Speed 100");
+      s2b15.setTextColor(deeppink);
+      s2b15.setBackgroundDrawable(new CD(dodgerblue));
+      s2b15.setOnClickListener(new OCL({
+          onClick: function(viewarg){
+                Entity.addEffect(getPlayerEnt(), MobEffect.movementSpeed, 9999*20, 99, false, true);
+          }
+      }));
+      menuLayout.addView(s2b15);
+            
+      var s2b16 = new Button(ctx);
+      s2b16.setText("Haste 1");
+      s2b16.setTextColor(deeppink);
+      s2b16.setBackgroundDrawable(new CD(dodgerblue));
+      s2b16.setOnClickListener(new OCL({
+          onClick: function(viewarg){
+                Entity.addEffect(getPlayerEnt(), MobEffect.digSpeed, 9999*20, 0, false, true);
+          }
+      }));
+      menuLayout.addView(s2b16);
+            
+      var s2b17 = new Button(ctx);
+      s2b17.setText("Haste 2");
+      s2b17.setTextColor(deeppink);
+      s2b17.setBackgroundDrawable(new CD(dodgerblue));
+      s2b17.setOnClickListener(new OCL({
+          onClick: function(viewarg){
+                Entity.addEffect(getPlayerEnt(), MobEffect.digSpeed, 9999*20, 1, false, true);
+          }
+      }));
+      menuLayout.addView(s2b17);
+            
+      var s2b18 = new Button(ctx);
+      s2b18.setText("Haste 3");
+      s2b18.setTextColor(deeppink);
+      s2b18.setBackgroundDrawable(new CD(dodgerblue));
+      s2b18.setOnClickListener(new OCL({
+          onClick: function(viewarg){
+                Entity.addEffect(getPlayerEnt(), MobEffect.digSpeed, 9999*20, 2, false, true);
+          }
+      }));
+      menuLayout.addView(s2b18);
+            
+      var s2b19 = new Button(ctx);
+      s2b19.setText("Haste 4");
+      s2b19.setTextColor(deeppink);
+      s2b19.setBackgroundDrawable(new CD(dodgerblue));
+      s2b19.setOnClickListener(new OCL({
+          onClick: function(viewarg){
+                Entity.addEffect(getPlayerEnt(), MobEffect.digSpeed, 9999*20, 0, false, true);
+          }
+      }));
+      menuLayout.addView(s2b16);
+            
+      var s2b20 = new Button(ctx);
+      s2b20.setText("Haste 5");
+      s2b20.setTextColor(deeppink);
+      s2b20.setBackgroundDrawable(new CD(dodgerblue));
+      s2b20.setOnClickListener(new OCL({
+          onClick: function(viewarg){
+                Entity.addEffect(getPlayerEnt(), MobEffect.digSpeed, 9999*20, 4, false, true);
+          }
+      }));
+      menuLayout.addView(s2b20);
+            
+      var s2b21 = new Button(ctx);
+      s2b21.setText("Haste 10");
+      s2b21.setTextColor(deeppink);
+      s2b21.setBackgroundDrawable(new CD(dodgerblue));
+      s2b21.setOnClickListener(new OCL({
+          onClick: function(viewarg){
+                Entity.addEffect(getPlayerEnt(), MobEffect.digSpeed, 9999*20, 9, false, true);
+          }
+      }));
+      menuLayout.addView(s2b21);
+            
+      var s2b22 = new Button(ctx);
+      s2b22.setText("Haste 20");
+      s2b22.setTextColor(deeppink);
+      s2b22.setBackgroundDrawable(new CD(dodgerblue));
+      s2b22.setOnClickListener(new OCL({
+          onClick: function(viewarg){
+                Entity.addEffect(getPlayerEnt(), MobEffect.digSpeed, 9999*20, 19, false, true);
+          }
+      }));
+      menuLayout.addView(s2b22);
+            
+      var s2b23 = new Button(ctx);
+      s2b23.setText("Haste 30");
+      s2b23.setTextColor(deeppink);
+      s2b23.setBackgroundDrawable(new CD(dodgerblue));
+      s2b23.setOnClickListener(new OCL({
+          onClick: function(viewarg){
+                Entity.addEffect(getPlayerEnt(), MobEffect.digSpeed, 9999*20, 29, false, true);
+          }
+      }));
+      menuLayout.addView(s2b23);
+            
+      var s2b24 = new Button(ctx);
+      s2b24.setText("Haste 40");
+      s2b24.setTextColor(deeppink);
+      s2b24.setBackgroundDrawable(new CD(dodgerblue));
+      s2b24.setOnClickListener(new OCL({
+          onClick: function(viewarg){
+                Entity.addEffect(getPlayerEnt(), MobEffect.digSpeed, 9999*20, 39, false, true);
+          }
+      }));
+      menuLayout.addView(s2b24);
+            
+      var s2b25 = new Button(ctx);
+      s2b25.setText("Haste 50");
+      s2b25.setTextColor(deeppink);
+      s2b25.setBackgroundDrawable(new CD(dodgerblue));
+      s2b25.setOnClickListener(new OCL({
+          onClick: function(viewarg){
+                Entity.addEffect(getPlayerEnt(), MobEffect.digSpeed, 9999*20, 49, false, true);
+          }
+      }));
+      menuLayout.addView(s2b25);
+            
+      var s2b26 = new Button(ctx);
+      s2b26.setText("Haste 100");
+      s2b26.setTextColor(deeppink);
+      s2b26.setBackgroundDrawable(new CD(dodgerblue));
+      s2b26.setOnClickListener(new OCL({
+          onClick: function(viewarg){
+                Entity.addEffect(getPlayerEnt(), MobEffect.digSpeed, 9999*20, 99, false, true);
+          }
+      }));
+      menuLayout.addView(s2b26);
       
       menu = new PW(menuLayout1, ctx.getWindowManager().getDefaultDisplay().getWidth()/2, ctx.getWindowManager().getDefaultDisplay().getHeight());
       menu.setBackgroundDrawable(new CD(black));
