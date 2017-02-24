@@ -178,6 +178,94 @@ var GUI;
           }
       }));
       menuLayout.addView(s2b6);
+            
+      var s2b7 = new Button(ctx);
+      s2b7.setText("Speed 7");
+      s2b7.setTextColor(deeppink);
+      s2b7.setBackgroundDrawable(new CD(dodgerblue));
+      s2b7.setOnClickListener(new OCL({
+          onClick: function(viewarg){
+                Entity.addEffect(getPlayerEnt(), MobEffect.movementSpeed, 9999*20, 6, false, true);
+          }
+      }));
+      menuLayout.addView(s2b7);
+            
+      var s2b8 = new Button(ctx);
+      s2b8.setText("Speed 8");
+      s2b8.setTextColor(deeppink);
+      s2b8.setBackgroundDrawable(new CD(dodgerblue));
+      s2b8.setOnClickListener(new OCL({
+          onClick: function(viewarg){
+                Entity.addEffect(getPlayerEnt(), MobEffect.movementSpeed, 9999*20, 7, false, true);
+          }
+      }));
+      menuLayout.addView(s2b8);
+            
+      var s2b9 = new Button(ctx);
+      s2b9.setText("Speed 9");
+      s2b9.setTextColor(deeppink);
+      s2b9.setBackgroundDrawable(new CD(dodgerblue));
+      s2b9.setOnClickListener(new OCL({
+          onClick: function(viewarg){
+                Entity.addEffect(getPlayerEnt(), MobEffect.movementSpeed, 9999*20, 8, false, true);
+          }
+      }));
+      menuLayout.addView(s2b9);
+            
+      var s2b10 = new Button(ctx);
+      s2b10.setText("Speed 10");
+      s2b10.setTextColor(deeppink);
+      s2b10.setBackgroundDrawable(new CD(dodgerblue));
+      s2b10.setOnClickListener(new OCL({
+          onClick: function(viewarg){
+                Entity.addEffect(getPlayerEnt(), MobEffect.movementSpeed, 9999*20, 9, false, true);
+          }
+      }));
+      menuLayout.addView(s2b10);
+            
+      var s2b11 = new Button(ctx);
+      s2b11.setText("Speed 20");
+      s2b11.setTextColor(deeppink);
+      s2b11.setBackgroundDrawable(new CD(dodgerblue));
+      s2b11.setOnClickListener(new OCL({
+          onClick: function(viewarg){
+                Entity.addEffect(getPlayerEnt(), MobEffect.movementSpeed, 9999*20, 19, false, true);
+          }
+      }));
+      menuLayout.addView(s2b11);
+            
+      var s2b12 = new Button(ctx);
+      s2b12.setText("Speed 30");
+      s2b12.setTextColor(deeppink);
+      s2b12.setBackgroundDrawable(new CD(dodgerblue));
+      s2b12.setOnClickListener(new OCL({
+          onClick: function(viewarg){
+                Entity.addEffect(getPlayerEnt(), MobEffect.movementSpeed, 9999*20, 29, false, true);
+          }
+      }));
+      menuLayout.addView(s2b12);
+            
+      var s2b13 = new Button(ctx);
+      s2b13.setText("Speed 40");
+      s2b13.setTextColor(deeppink);
+      s2b13.setBackgroundDrawable(new CD(dodgerblue));
+      s2b13.setOnClickListener(new OCL({
+          onClick: function(viewarg){
+                Entity.addEffect(getPlayerEnt(), MobEffect.movementSpeed, 9999*20, 39, false, true);
+          }
+      }));
+      menuLayout.addView(s2b13);
+      
+      var s2b14 = new Button(ctx);
+      s2b14.setText("Speed 50");
+      s2b14.setTextColor(deeppink);
+      s2b14.setBackgroundDrawable(new CD(dodgerblue));
+      s2b14.setOnClickListener(new OCL({
+          onClick: function(viewarg){
+                Entity.addEffect(getPlayerEnt(), MobEffect.movementSpeed, 9999*20, 49, false, true);
+          }
+      }));
+      menuLayout.addView(s2b14);
       
       menu = new PW(menuLayout1, ctx.getWindowManager().getDefaultDisplay().getWidth()/2, ctx.getWindowManager().getDefaultDisplay().getHeight());
       menu.setBackgroundDrawable(new CD(black));
