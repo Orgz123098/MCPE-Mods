@@ -354,6 +354,17 @@ var GUI;
           }
       }));
       menuLayout.addView(s2b26);
+            
+      var s2b27 = new Button(ctx);
+      s2b27.setText("Strength 1");
+      s2b27.setTextColor(deeppink);
+      s2b27.setBackgroundDrawable(new CD(dodgerblue));
+      s2b27.setOnClickListener(new OCL({
+          onClick: function(viewarg){
+                Entity.addEffect(getPlayerEnt(), MobEffect.damageBoost, 9999*20, 0, false, true);
+          }
+      }));
+      menuLayout.addView(s2b27);
       
       menu = new PW(menuLayout1, ctx.getWindowManager().getDefaultDisplay().getWidth()/2, ctx.getWindowManager().getDefaultDisplay().getHeight());
       menu.setBackgroundDrawable(new CD(black));
