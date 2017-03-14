@@ -26,6 +26,7 @@ var Runnable = java.lang.Runnable;
 var OCL = android.view.View.OnClickListener;
 var CD = android.graphics.drawable.ColorDrawable;
 var RL = android.widget.RelativeLayout;
+var SV = android.widget.ScrollView;
 
 var GUI;
       var menu;
@@ -62,7 +63,7 @@ var GUI;
       ctx.runOnUiThread(new Runnable({ run: function(){
       try{
       var menuLayout = new LL(ctx);
-      var menuScroll = new android.widget.ScrollView(ctx);
+      var menuScroll = new SV(ctx);
       var menuLayout1 = new LL(ctx);
       menuLayout.setOrientation(1);
       menuLayout1.setOrientation(1);
