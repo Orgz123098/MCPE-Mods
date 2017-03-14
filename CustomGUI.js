@@ -2,6 +2,7 @@ var Button = android.widget.Button;
 var LL = android.widget.LinearLayout;
 var SV = android.widget.ScrollView;
 var PW = android.widget.PopupWindow;
+var RL = android.widget.RelativeLayout;
 
 var GUI;
 var menu;
@@ -16,7 +17,7 @@ function newLevel(){
     var ctx = com.mojang.minecraftpe.MainActivity.currentMainActivity.get();
     ctx.runOnUiThread(new java.lang.Runnable({ run: function(){
         try{
-            var layout = new android.widget.LinearLayout(ctx);
+            var layout = new LL(ctx);
             layout.setOrientation(1);
 
             var menuBtn = new Button(ctx);
@@ -28,7 +29,7 @@ function newLevel(){
             }));
             layout.addView(menuBtn);
 
-            GUI = new android.widget.PopupWindow(layout, android.widget.RelativeLayout.LayoutParams.WRAP_CONTENT, android.widget.RelativeLayout.LayoutParams.WRAP_CONTENT);
+            GUI = new android.widget.PopupWindow(layout, RL.LayoutParams.WRAP_CONTENT, RL.LayoutParams.WRAP_CONTENT);
             GUI.setBackgroundDrawable(new android.graphics.drawable.ColorDrawable(android.graphics.Color.TRANSPARENT));
             GUI.showAtLocation(ctx.getWindow().getDecorView(), android.view.Gravity.RIGHT | android.view.Gravity.BOTTOM, 0, 0);
         }catch(err){
