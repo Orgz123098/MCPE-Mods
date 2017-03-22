@@ -1,3 +1,17 @@
+var black = android.graphics.Color.BLACK;
+var white = android.graphics.Color.WHITE;
+var magenta = android.graphics.Color.MAGENTA;
+var red = android.graphics.Color.RED;
+var blue = android.graphics.Color.BLUE;
+var yellow = android.graphics.Color.YELLOW;
+var green = android.graphics.Color.GREEN;
+var cyan = android.graphics.Color.CYAN;
+var trans = android.graphics.Color.TRANSPARENT;
+var dodgerblue = android.graphics.Color.parseColor("#1E90FF");
+var deeppink = android.graphics.Color.parseColor("#FF1493");
+var teal = android.graphics.Color.parseColor("#008080");
+var crimson = android.graphics.Color.parseColor("#DC143C");
+
 var Button = android.widget.Button;
 var LL = android.widget.LinearLayout;
 var SV = android.widget.ScrollView;
