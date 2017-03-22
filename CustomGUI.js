@@ -12,11 +12,15 @@ var deeppink = android.graphics.Color.parseColor("#FF1493");
 var teal = android.graphics.Color.parseColor("#008080");
 var crimson = android.graphics.Color.parseColor("#DC143C");
 
+var TV = android.widget.TextView;
 var Button = android.widget.Button;
-var LL = android.widget.LinearLayout;
-var SV = android.widget.ScrollView;
 var PW = android.widget.PopupWindow;
+var LL = new android.widget.LinearLayout;
+var Runnable = java.lang.Runnable;
+var OCL = android.view.View.OnClickListener;
+var CD = android.graphics.drawable.ColorDrawable;
 var RL = android.widget.RelativeLayout;
+var SV = android.widget.ScrollView;
 
 var GUI;
 var menu;
