@@ -31,21 +31,6 @@ var CD = android.graphics.drawable.ColorDrawable;
 var RL = android.widget.RelativeLayout;
 var SV = android.widget.ScrollView;
 
-//Effects
-var e1 = "Speed ";
-var e2 = "Haste ";
-var e3 = "Strength ";
-var e4 = "Jump Boost ";
-var e5 = "Regeneration ";
-var e6 = "Resistance ";
-var e7 = "Fire Resistance ";
-var e8 = "Water Breathing ";
-var e9 = "Invisibility ";
-var e10 = "Night Vision ";
-
-//Enchantments
-
-
 //GUI
 var GUI;
       var menu;
@@ -128,13 +113,6 @@ var GUI;
           }
       }));
       menuLayout.addView(s1b2);
-            
-      /*
-      ----------
-      */
-            
-      
-      
       menu = new PW(menuLayout1, ctx.getWindowManager().getDefaultDisplay().getWidth()/2, ctx.getWindowManager().getDefaultDisplay().getHeight());
       menu.setBackgroundDrawable(new CD(black));
       menu.showAtLocation(ctx.getWindow().getDecorView(), right | top, 0, 0);
