@@ -72,6 +72,69 @@ function procCmd(command){
   }
   if(cmd[0] == "give"){
     if(cmd[1] == "1"){
+      if(cmd[2] == "51"){
+        Player.addItemInventory(1, 3, 0);
+      }
+    }
+  }
+  if(cmd[0] == "give"){
+    if(cmd[1] == "1"){
+      if(cmd[2] == "52"){
+        Player.addItemInventory(1, 3, 0);
+      }
+    }
+  }
+  if(cmd[0] == "give"){
+    if(cmd[1] == "1"){
+      if(cmd[2] == "53"){
+        Player.addItemInventory(1, 3, 0);
+      }
+    }
+  }
+  if(cmd[0] == "give"){
+    if(cmd[1] == "1"){
+      if(cmd[2] == "54"){
+        Player.addItemInventory(1, 3, 0);
+      }
+    }
+  }
+  if(cmd[0] == "give"){
+    if(cmd[1] == "1"){
+      if(cmd[2] == "55"){
+        Player.addItemInventory(1, 3, 0);
+      }
+    }
+  }
+  if(cmd[0] == "give"){
+    if(cmd[1] == "1"){
+      if(cmd[2] == "56"){
+        Player.addItemInventory(1, 3, 0);
+      }
+    }
+  }
+  if(cmd[0] == "give"){
+    if(cmd[1] == "1"){
+      if(cmd[2] == "57"){
+        Player.addItemInventory(1, 3, 0);
+      }
+    }
+  }
+  if(cmd[0] == "give"){
+    if(cmd[1] == "1"){
+      if(cmd[2] == "58"){
+        Player.addItemInventory(1, 3, 0);
+      }
+    }
+  }
+  if(cmd[0] == "give"){
+    if(cmd[1] == "1"){
+      if(cmd[2] == "59"){
+        Player.addItemInventory(1, 3, 0);
+      }
+    }
+  }
+  if(cmd[0] == "give"){
+    if(cmd[1] == "1"){
       if(cmd[2] == "60"){
         Player.addItemInventory(1, 3, 0);
       }
