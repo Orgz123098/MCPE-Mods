@@ -72,6 +72,34 @@ function procCmd(command){
   }
   if(cmd[0] == "give"){
     if(cmd[1] == "1"){
+      if(cmd[2] == "60"){
+        Player.addItemInventory(1, 3, 0);
+      }
+    }
+  }
+  if(cmd[0] == "give"){
+    if(cmd[1] == "1"){
+      if(cmd[2] == "61"){
+        Player.addItemInventory(1, 3, 0);
+      }
+    }
+  }
+  if(cmd[0] == "give"){
+    if(cmd[1] == "1"){
+      if(cmd[2] == "62"){
+        Player.addItemInventory(1, 3, 0);
+      }
+    }
+  }
+  if(cmd[0] == "give"){
+    if(cmd[1] == "1"){
+      if(cmd[2] == "63"){
+        Player.addItemInventory(1, 3, 0);
+      }
+    }
+  }
+  if(cmd[0] == "give"){
+    if(cmd[1] == "1"){
       if(cmd[2] == "64"){
         Player.addItemInventory(1, 3, 0);
       }
