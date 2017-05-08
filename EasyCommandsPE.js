@@ -1,5 +1,15 @@
 function procCmd(command){
   var cmd = command.split(" ");
+  if(cmd[0] == "fly"){
+    if(cmd[1] == "on"){
+      Player.setCanFly(1);
+    }
+  }
+  if(cmd[0] == "fly"){
+    if(cmd[1] == "off"){
+      Player.setCanFly(0);
+    }
+  }
   if(cmd[0] == "give"){
     if(cmd[1] == "1"){
       if(cmd[2] == "1"){
