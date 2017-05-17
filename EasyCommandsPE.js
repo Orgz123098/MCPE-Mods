@@ -3,11 +3,13 @@ function procCmd(command){
   if(cmd[0] == "fly"){
     if(cmd[1] == "on"){
       Player.setCanFly(1);
+      clientMessage(ChatColor.GREEN + "Fly mode on!");
     }
   }
   if(cmd[0] == "fly"){
     if(cmd[1] == "off"){
       Player.setCanFly(0);
+      clientMessage(ChatColor.RED + "Fly mode off!");
     }
   }
   if(cmd[0] == "give"){
