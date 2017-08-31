@@ -1,4 +1,3 @@
-//Commands
 //Colors
 var black = android.graphics.Color.BLACK;
 var white = android.graphics.Color.WHITE;
